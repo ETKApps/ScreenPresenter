@@ -1,0 +1,111 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+@import '../app.shared.scss';
+
+.padding {
+  padding: $padding;
+}
+
+.aside,
+.content{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.aside{
+  left: 0;
+  width: $aside-width;
+  padding-bottom: $default-height;
+}
+
+.save {
+  height: $default-height;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: $aside-width;
+  background: $black-1;
+  text-align: right;
+  padding: 9px;
+}
+
+.content{
+  left: $aside-width;
+  right: 0;
+  background: $grey-2;
+}
+
+.vertical-scroll{
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.all-scroll{
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.screenPreview{
+  line-height: $screen-line-height;
+  position: relative;
+  margin: 50px auto;
+  background: #fff;
+  text-align: center;
+  .spTitle,
+  .spVerse {
+    box-shadow: 0 0px 10px #ccc;
+  }
+}
+
+.title-up,
+.title-left,
+.title-right,
+.verse-left,
+.verse-right,
+.verse-down{
+  position: absolute;
+  text-shadow: 0px 0px 2px #fff;
+  font-size: 30px;
+  color: red;
+  -webkit-text-fill-color: red; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.title-left,
+.title-right,
+.verse-left,
+.verse-right{
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.title-up,
+.verse-down{
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.title-left,
+.verse-left{
+  left: -30px;
+}
+
+.title-right,
+.verse-right{
+  right: -30px;
+}
+
+.title-up{
+  top: -30px;
+}
+
+.verse-down{
+  bottom: -30px;
+}

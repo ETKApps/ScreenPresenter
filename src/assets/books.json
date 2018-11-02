@@ -1,0 +1,534 @@
+[
+  {
+    "id": "1",
+    "name": ""
+  },
+  {
+    "id": "es_1",
+    "name": "Génesis"
+  },
+  {
+    "id": "es_2",
+    "name": "Éxodo"
+  },
+  {
+    "id": "es_3",
+    "name": "Levítico"
+  },
+  {
+    "id": "es_4",
+    "name": "Números"
+  },
+  {
+    "id": "es_5",
+    "name": "Deuteronomio"
+  },
+  {
+    "id": "es_6",
+    "name": "Josué"
+  },
+  {
+    "id": "es_7",
+    "name": "Jueces"
+  },
+  {
+    "id": "es_8",
+    "name": "Rut"
+  },
+  {
+    "id": "es_9",
+    "name": "1 Samuel"
+  },
+  {
+    "id": "es_10",
+    "name": "2 Samuel"
+  },
+  {
+    "id": "es_11",
+    "name": "1 Reyes"
+  },
+  {
+    "id": "es_12",
+    "name": "2 Reyes"
+  },
+  {
+    "id": "es_13",
+    "name": "Jeremías"
+  },
+  {
+    "id": "es_14",
+    "name": "Crónicas"
+  },
+  {
+    "id": "es_15",
+    "name": "Esdras"
+  },
+  {
+    "id": "es_16",
+    "name": "Nehemías"
+  },
+  {
+    "id": "es_17",
+    "name": "Ester"
+  },
+  {
+    "id": "es_18",
+    "name": "Job"
+  },
+  {
+    "id": "es_19",
+    "name": "Salmos"
+  },
+  {
+    "id": "es_20",
+    "name": "Proverbios"
+  },
+  {
+    "id": "es_21",
+    "name": "Eclesiastés"
+  },
+  {
+    "id": "es_22",
+    "name": "Cantar de los Cantares"
+  },
+  {
+    "id": "es_23",
+    "name": "Isaías"
+  },
+  {
+    "id": "es_24",
+    "name": "Jeremías"
+  },
+  {
+    "id": "es_25",
+    "name": "Lamentaciones"
+  },
+  {
+    "id": "es_26",
+    "name": "Ezequiel"
+  },
+  {
+    "id": "es_27",
+    "name": "Daniel"
+  },
+  {
+    "id": "es_28",
+    "name": "Oseas"
+  },
+  {
+    "id": "es_29",
+    "name": "Joel"
+  },
+  {
+    "id": "es_30",
+    "name": "Amós"
+  },
+  {
+    "id": "es_31",
+    "name": "Abdías"
+  },
+  {
+    "id": "es_32",
+    "name": "Jonás"
+  },
+  {
+    "id": "es_33",
+    "name": "Miqueas"
+  },
+  {
+    "id": "es_34",
+    "name": "Nahúm"
+  },
+  {
+    "id": "es_35",
+    "name": "Habacuc"
+  },
+  {
+    "id": "es_36",
+    "name": "Sofonías"
+  },
+  {
+    "id": "es_37",
+    "name": "Hageo"
+  },
+  {
+    "id": "es_38",
+    "name": "Zacarías"
+  },
+  {
+    "id": "es_39",
+    "name": "Malaquías"
+  },
+  {
+    "id": "es_40",
+    "name": "Mateo "
+  },
+  {
+    "id": "es_41",
+    "name": "Marcos"
+  },
+  {
+    "id": "es_42",
+    "name": "Lucas"
+  },
+  {
+    "id": "es_43",
+    "name": "Juan"
+  },
+  {
+    "id": "es_44",
+    "name": "Hechos"
+  },
+  {
+    "id": "es_45",
+    "name": "Romanos"
+  },
+  {
+    "id": "es_46",
+    "name": "1 Corintios"
+  },
+  {
+    "id": "es_47",
+    "name": "2 Corintios"
+  },
+  {
+    "id": "es_48",
+    "name": "Gálatas "
+  },
+  {
+    "id": "es_49",
+    "name": "Efesios "
+  },
+  {
+    "id": "es_50",
+    "name": "Filipenses"
+  },
+  {
+    "id": "es_51",
+    "name": "Colosenses"
+  },
+  {
+    "id": "es_52",
+    "name": "1 Tesalonicenses"
+  },
+  {
+    "id": "es_53",
+    "name": "2 Tesalonicenses"
+  },
+  {
+    "id": "es_54",
+    "name": "1 Timoteo"
+  },
+  {
+    "id": "es_55",
+    "name": "2 Timoteo"
+  },
+  {
+    "id": "es_56",
+    "name": "Tito"
+  },
+  {
+    "id": "es_57",
+    "name": "Filemón"
+  },
+  {
+    "id": "es_58",
+    "name": "Hebreos"
+  },
+  {
+    "id": "es_59",
+    "name": "Santiago"
+  },
+  {
+    "id": "es_60",
+    "name": "1 Pedro"
+  },
+  {
+    "id": "es_61",
+    "name": "2 Pedro"
+  },
+  {
+    "id": "es_62",
+    "name": "1 Juan"
+  },
+  {
+    "id": "es_63",
+    "name": "2 Juan "
+  },
+  {
+    "id": "es_64",
+    "name": "3 Juan"
+  },
+  {
+    "id": "es_65",
+    "name": "Judas "
+  },
+  {
+    "id": "es_66",
+    "name": "Apocalipsis"
+  },
+  {
+    "id": "en_1",
+    "name": "Genesis"
+  },
+  {
+    "id": "en_2",
+    "name": "Exodus"
+  },
+  {
+    "id": "en_3",
+    "name": "Leviticus"
+  },
+  {
+    "id": "en_4",
+    "name": "Numbers"
+  },
+  {
+    "id": "en_5",
+    "name": "Deuteronomy"
+  },
+  {
+    "id": "en_6",
+    "name": "Joshua"
+  },
+  {
+    "id": "en_7",
+    "name": "Judges"
+  },
+  {
+    "id": "en_8",
+    "name": "Ruth"
+  },
+  {
+    "id": "en_9",
+    "name": "1 Samuel"
+  },
+  {
+    "id": "en_10",
+    "name": "2 Samuel"
+  },
+  {
+    "id": "en_11",
+    "name": "1 Kings"
+  },
+  {
+    "id": "en_12",
+    "name": "2 Kings"
+  },
+  {
+    "id": "en_13",
+    "name": "1 Chronicles"
+  },
+  {
+    "id": "en_14",
+    "name": "2 Chronicles"
+  },
+  {
+    "id": "en_15",
+    "name": "Ezra"
+  },
+  {
+    "id": "en_16",
+    "name": "Nehemiah"
+  },
+  {
+    "id": "en_17",
+    "name": "Esther"
+  },
+  {
+    "id": "en_18",
+    "name": "Job"
+  },
+  {
+    "id": "en_19",
+    "name": "Psalm"
+  },
+  {
+    "id": "en_20",
+    "name": "Proverbs"
+  },
+  {
+    "id": "en_21",
+    "name": "Ecclesiastes"
+  },
+  {
+    "id": "en_22",
+    "name": "Song of Solomon"
+  },
+  {
+    "id": "en_23",
+    "name": "Isaiah"
+  },
+  {
+    "id": "en_24",
+    "name": "Jeremiah"
+  },
+  {
+    "id": "en_25",
+    "name": "Lamentations"
+  },
+  {
+    "id": "en_26",
+    "name": "Ezekiel"
+  },
+  {
+    "id": "en_27",
+    "name": "Daniel"
+  },
+  {
+    "id": "en_28",
+    "name": "Hosea"
+  },
+  {
+    "id": "en_29",
+    "name": "Joel"
+  },
+  {
+    "id": "en_30",
+    "name": "Amos"
+  },
+  {
+    "id": "en_31",
+    "name": "Obadiah"
+  },
+  {
+    "id": "en_32",
+    "name": "Jonah"
+  },
+  {
+    "id": "en_33",
+    "name": "Micah"
+  },
+  {
+    "id": "en_34",
+    "name": "Nahum"
+  },
+  {
+    "id": "en_35",
+    "name": "Habakkuk"
+  },
+  {
+    "id": "en_36",
+    "name": "Zephaniah"
+  },
+  {
+    "id": "en_37",
+    "name": "Haggai"
+  },
+  {
+    "id": "en_38",
+    "name": "Zechariah"
+  },
+  {
+    "id": "en_39",
+    "name": "Malachi"
+  },
+  {
+    "id": "en_40",
+    "name": "Matthew"
+  },
+  {
+    "id": "en_41",
+    "name": "Mark"
+  },
+  {
+    "id": "en_42",
+    "name": "Luke"
+  },
+  {
+    "id": "en_43",
+    "name": "John"
+  },
+  {
+    "id": "en_44",
+    "name": "Acts"
+  },
+  {
+    "id": "en_45",
+    "name": "Romans"
+  },
+  {
+    "id": "en_46",
+    "name": "1 Corinthians"
+  },
+  {
+    "id": "en_47",
+    "name": "2 Corinthians"
+  },
+  {
+    "id": "en_48",
+    "name": "Galatians"
+  },
+  {
+    "id": "en_49",
+    "name": "Ephesians"
+  },
+  {
+    "id": "en_50",
+    "name": "Philippians"
+  },
+  {
+    "id": "en_51",
+    "name": "Colossians"
+  },
+  {
+    "id": "en_52",
+    "name": "1 Thessalonians"
+  },
+  {
+    "id": "en_53",
+    "name": "2 Thessalonians"
+  },
+  {
+    "id": "en_54",
+    "name": "1 Timothy"
+  },
+  {
+    "id": "en_55",
+    "name": "2 Timothy"
+  },
+  {
+    "id": "en_56",
+    "name": "Titus"
+  },
+  {
+    "id": "en_57",
+    "name": "Philemon"
+  },
+  {
+    "id": "en_58",
+    "name": "Hebrews"
+  },
+  {
+    "id": "en_59",
+    "name": "James"
+  },
+  {
+    "id": "en_60",
+    "name": "1 Peter"
+  },
+  {
+    "id": "en_61",
+    "name": "2 Peter"
+  },
+  {
+    "id": "en_62",
+    "name": "1 John"
+  },
+  {
+    "id": "en_63",
+    "name": "2 John"
+  },
+  {
+    "id": "en_64",
+    "name": "3 John"
+  },
+  {
+    "id": "en_65",
+    "name": "Jude"
+  },
+  {
+    "id": "en_66",
+    "name": "Revelation"
+  }
+]

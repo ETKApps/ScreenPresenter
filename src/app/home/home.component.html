@@ -1,0 +1,358 @@
+<div class="aside">
+  <div class="vertical-scroll">
+    <div class="padding">
+      <h2>Screen Presenter</h2>
+      <!-- <p>Welcome to the ScreenPresenter software for Churches.</p> -->
+      <p>Open the screen view in another browser tab, drag it to your projector screen and make it fullscreen.</p>
+      <a href="/screen" target="_blank" class="btn btn-success btn-sm">Open Screen view</a>
+
+      <hr />
+
+      <div class="btn-group">
+        <button class="btn btn-outline-primary btn-sm" [class.active]="tab == 'general'" (click)="tab = 'general'">General</button>
+        <button class="btn btn-outline-primary btn-sm" [class.active]="tab == 'title1'" (click)="tab = 'title1'">Title
+          1</button>
+        <button class="btn btn-outline-primary btn-sm" [class.active]="tab == 'title2'" (click)="tab = 'title2'">Title
+          2</button>
+        <button class="btn btn-outline-primary btn-sm" [class.active]="tab == 'verse1'" (click)="tab = 'verse1'">Verse
+          1</button>
+        <button class="btn btn-outline-primary btn-sm" [class.active]="tab == 'verse2'" (click)="tab = 'verse2'">Verse
+          2</button>
+      </div>
+
+      <hr />
+
+      <div *ngIf="tab == 'general'">
+
+        <p>Screen: {{settings.screenWidth}}x{{settings.screenHeight}}px</p>
+
+        <div class="form-group">
+          <label>Background Color</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.bgColor" />
+        </div>
+
+        <div class="form-group">
+          <label>Background Image</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.backgroundImage" />
+        </div>
+
+        <div class="form-group">
+          <label for="file">Background Video</label>
+          <input accept="video/mp4" type="file" (change)="handleFileInput($event.target.files)">
+        </div>
+
+        <div class="form-group form-check">
+          <input [(ngModel)]="settings.showVideo" type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="exampleCheck1">Show Video</label>
+        </div>
+
+        <div class="form-group">
+          <label>Overlay Image</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.overlayImage" />
+        </div>
+
+      </div>
+
+      <div *ngIf="tab == 'title1'">
+
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.title1" />
+        </div>
+
+        <!-- TODO: add fonts -->
+
+        <div class="form-group">
+          <label>Color</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.title1Color" />
+        </div>
+
+        <div class="form-group">
+          <label for="formControlRange">Size</label>
+          <input type="range" min="0" max="1000" class="form-control-range" [(ngModel)]="settings.title1FontSize">
+        </div>
+
+        <div class="form-group">
+          <label>Align</label>
+          <div>
+            <div class="btn-group">
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.title1TextAlign == 'left'"
+                (click)="settings.title1TextAlign = 'left'">
+                <i class="fa fa-align-left"></i>
+              </button>
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.title1TextAlign == 'center'"
+                (click)="settings.title1TextAlign = 'center'">
+                <i class="fa fa-align-center"></i>
+              </button>
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.title1TextAlign == 'right'"
+                (click)="settings.title1TextAlign = 'right'">
+                <i class="fa fa-align-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Position</label>
+          <div class="row">
+            <div class="col-sm">
+              Left
+              <input type="number" class="form-control" [(ngModel)]="settings.title1Left" />
+            </div>
+            <div class="col-sm">
+              Top
+              <input type="number" class="form-control" [(ngModel)]="settings.title1Top" />
+            </div>
+            <div class="col-sm">
+              Right
+              <input type="number" class="form-control" [(ngModel)]="settings.title1Right" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div *ngIf="tab == 'title2'">
+
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.title2" />
+        </div>
+
+        <div class="form-group">
+          <label>Color</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.title2Color" />
+        </div>
+
+        <div class="form-group">
+          <label for="formControlRange">Size</label>
+          <input type="range" min="0" max="1000" class="form-control-range" [(ngModel)]="settings.title2FontSize">
+        </div>
+
+        <div class="form-group">
+          <label>Align</label>
+          <div>
+            <div class="btn-group">
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.title2TextAlign == 'left'"
+                (click)="settings.title2TextAlign = 'left'">
+                <i class="fa fa-align-left"></i>
+              </button>
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.title2TextAlign == 'center'"
+                (click)="settings.title2TextAlign = 'center'">
+                <i class="fa fa-align-center"></i>
+              </button>
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.title2TextAlign == 'right'"
+                (click)="settings.title2TextAlign = 'right'">
+                <i class="fa fa-align-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Position</label>
+          <div class="row">
+            <div class="col-sm">
+              Left
+              <input type="number" class="form-control" [(ngModel)]="settings.title2Left" />
+            </div>
+            <div class="col-sm">
+              Top
+              <input type="number" class="form-control" [(ngModel)]="settings.title2Top" />
+            </div>
+            <div class="col-sm">
+              Right
+              <input type="number" class="form-control" [(ngModel)]="settings.title2Right" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div *ngIf="tab == 'verse1'">
+
+        <div class="form-group">
+          <label>Book</label>
+          <ng-select [items]="books" bindLabel="name" bindValue="id" (change)="handleVerse1Selection(selectedBook1)"
+            [(ngModel)]="selectedBook1">
+          </ng-select>
+        </div>
+
+        <div class="form-group">
+          <label>Reference</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.verse1Reference" />
+        </div>
+
+        <div class="form-group">
+          <label>Color</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.verse1Color" />
+        </div>
+
+        <div class="form-group">
+          <label for="formControlRange">Size</label>
+          <input type="range" min="0" max="1000" class="form-control-range" [(ngModel)]="settings.verse1FontSize">
+        </div>
+
+        <div class="form-group">
+          <label>Align</label>
+          <div>
+            <div class="btn-group">
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.verse1TextAlign == 'left'"
+                (click)="settings.verse1TextAlign = 'left'">
+                <i class="fa fa-align-left"></i>
+              </button>
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.verse1TextAlign == 'center'"
+                (click)="settings.verse1TextAlign = 'center'">
+                <i class="fa fa-align-center"></i>
+              </button>
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.verse1TextAlign == 'right'"
+                (click)="settings.verse1TextAlign = 'right'">
+                <i class="fa fa-align-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Position</label>
+          <div class="row">
+            <div class="col-sm">
+              Left
+              <input type="number" class="form-control" [(ngModel)]="settings.verse1Left" />
+            </div>
+            <div class="col-sm">
+              Bottom
+              <input type="number" class="form-control" [(ngModel)]="settings.verse1Bottom" />
+            </div>
+            <div class="col-sm">
+              Right
+              <input type="number" class="form-control" [(ngModel)]="settings.verse1Right" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div *ngIf="tab == 'verse2'">
+
+        <div class="form-group">
+          <label>Book</label>
+          <ng-select [items]="books" bindLabel="name" bindValue="id" (change)="handleVerse2Selection(selectedBook2)"
+            [(ngModel)]="selectedBook2">
+          </ng-select>
+        </div>
+
+        <div class="form-group">
+          <label>Reference</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.verse2Reference" />
+        </div>
+
+        <div class="form-group">
+          <label>Color</label>
+          <input type="text" class="form-control" [(ngModel)]="settings.verse2Color" />
+        </div>
+
+        <div class="form-group">
+          <label for="formControlRange">Size</label>
+          <input type="range" min="0" max="1000" class="form-control-range" [(ngModel)]="settings.verse2FontSize">
+        </div>
+
+        <div class="form-group">
+          <label>Align</label>
+          <div>
+            <div class="btn-group">
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.verse2TextAlign == 'left'"
+                (click)="settings.verse2TextAlign = 'left'">
+                <i class="fa fa-align-left"></i>
+              </button>
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.verse2TextAlign == 'center'"
+                (click)="settings.verse2TextAlign = 'center'">
+                <i class="fa fa-align-center"></i>
+              </button>
+              <button class="btn btn-outline-primary btn-sm" [class.active]="settings.verse2TextAlign == 'right'"
+                (click)="settings.verse2TextAlign = 'right'">
+                <i class="fa fa-align-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Position</label>
+          <div class="row">
+            <div class="col-sm">
+              Left
+              <input type="number" class="form-control" [(ngModel)]="settings.verse2Left" />
+            </div>
+            <div class="col-sm">
+              Bottom
+              <input type="number" class="form-control" [(ngModel)]="settings.verse2Bottom" />
+            </div>
+            <div class="col-sm">
+              Right
+              <input type="number" class="form-control" [(ngModel)]="settings.verse2Right" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="save">
+  <button type="button" class="btn btn-primary" (click)="save(settings)">Save & Publish</button>
+</div>
+
+<div class="content">
+  <div class="all-scroll">
+
+    <div class="screenPreview" [ngStyle]="{
+    'width': settings.screenWidth + 'px',
+    'height': settings.screenHeight + 'px',
+    'background-color': settings.bgColor
+    }">
+
+      <div class="bg-image" [ngStyle]="{'background-color': settings.bgColor, 'background-image': 'url(' + settings.backgroundImage + ')'}"></div>
+
+      <video *ngIf="settings.showVideo && videoBlob" autoplay loop>
+        <source [src]="videoBlob" type="video/mp4">
+      </video>
+
+      <div *ngIf="settings.title1" class="spTitle black-stroke" [ngStyle]="{'color': settings.title1Color, 'font-size': settings.title1FontSize + '%', 'top': settings.title1Top + '%', 'left': settings.title1Left + '%', 'right': settings.title1Right + '%', 'text-align': settings.title1TextAlign}">
+        <span [innerHtml]="settings.title1"></span>
+        <i class="fa fa-arrow-up title-up" *ngIf="tab == 'title1'"></i>
+        <i class="fa fa-arrow-left title-left" *ngIf="tab == 'title1'"></i>
+        <i class="fa fa-arrow-right title-right" *ngIf="tab == 'title1'"></i>
+      </div>
+
+      <div *ngIf="settings.title2" class="spTitle black-stroke" [ngStyle]="{'color': settings.title2Color, 'font-size': settings.title2FontSize + '%', 'top': settings.title2Top + '%', 'left': settings.title2Left + '%', 'right': settings.title2Right + '%', 'text-align': settings.title2TextAlign}">
+        <span [innerHtml]="settings.title2"></span>
+        <i class="fa fa-arrow-up title-up" *ngIf="tab == 'title2'"></i>
+        <i class="fa fa-arrow-left title-left" *ngIf="tab == 'title2'"></i>
+        <i class="fa fa-arrow-right title-right" *ngIf="tab == 'title2'"></i>
+      </div>
+
+      <div *ngIf="settings.verse1Book || settings.verse1Reference" class="spVerse black-stroke" [ngStyle]="{'color': settings.verse1Color, 'font-size': settings.verse1FontSize + '%', 'bottom': settings.verse1Bottom + '%','left': settings.verse1Left + '%','right': settings.verse1Right + '%','text-align': settings.verse1TextAlign}">
+        <i class="fa fa-arrow-down verse-down" *ngIf="tab == 'verse1'"></i>
+        <i class="fa fa-arrow-left verse-left" *ngIf="tab == 'verse1'"></i>
+        <i class="fa fa-arrow-right verse-right" *ngIf="tab == 'verse1'"></i>
+        <span [innerHtml]="settings.verse1Book"></span>&nbsp;
+        <span [innerHtml]="settings.verse1Reference"></span>
+      </div>
+
+      <div *ngIf="settings.verse2Book || settings.verse2Reference" class="spVerse black-stroke" [ngStyle]="{'color': settings.verse2Color, 'font-size': settings.verse2FontSize + '%', 'bottom': settings.verse2Bottom + '%','left': settings.verse2Left + '%','right': settings.verse2Right + '%','text-align': settings.verse2TextAlign}">
+        <i class="fa fa-arrow-down verse-down" *ngIf="tab == 'verse2'"></i>
+        <i class="fa fa-arrow-left verse-left" *ngIf="tab == 'verse2'"></i>
+        <i class="fa fa-arrow-right verse-right" *ngIf="tab == 'verse2'"></i>
+        <span [innerHtml]="settings.verse2Book"></span>&nbsp;
+        <span [innerHtml]="settings.verse2Reference"></span>
+      </div>
+
+      <div class="bg-image" *ngIf="settings.overlayImage" [ngStyle]="{'background-color': settings.bgColor, 'background-image': 'url(' + settings.overlayImage + ')'}"></div>
+
+    </div>
+
+  </div>
+</div>
