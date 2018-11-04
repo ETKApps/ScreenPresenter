@@ -7,20 +7,20 @@
     <source [src]="videoBlob" type="video/mp4">
   </video>
 
-  <div class="spTitle black-stroke" [ngStyle]="{'color': settings.title1Color, 'font-size': settings.title1FontSize + '%', 'top': settings.title1Top + '%', 'left': settings.title1Left + '%', 'right': settings.title1Right + '%', 'text-align': settings.title1TextAlign}">
+  <div class="spTitle black-stroke" [ngStyle]="{'color': settings.title1Color, 'font-size': settings.title1FontSize + '%', 'top': settings.title1Top + '%', 'left': settings.title1Left + '%', 'right': settings.title1Right + '%', 'text-align': settings.title1TextAlign, 'text-transform': settings.title1TextTransform}">
     <span [innerHtml]="settings.title1"></span>
   </div>
 
-  <div class="spTitle black-stroke" [ngStyle]="{'color': settings.title2Color, 'font-size': settings.title2FontSize + '%', 'top': settings.title2Top + '%', 'left': settings.title2Left + '%', 'right': settings.title2Right + '%', 'text-align': settings.title2TextAlign}">
+  <div class="spTitle black-stroke" [ngStyle]="{'color': settings.title2Color, 'font-size': settings.title2FontSize + '%', 'top': settings.title2Top + '%', 'left': settings.title2Left + '%', 'right': settings.title2Right + '%', 'text-align': settings.title2TextAlign, 'text-transform': settings.title2TextTransform}">
     <span [innerHtml]="settings.title2"></span>
   </div>
 
-  <div class="spVerse black-stroke" [ngStyle]="{'color': settings.verse1Color, 'font-size': settings.verse1FontSize + '%', 'bottom': settings.verse1Bottom + '%','left': settings.verse1Left + '%','right': settings.verse1Right + '%','text-align': settings.verse1TextAlign}">
+  <div class="spVerse black-stroke" [ngStyle]="{'color': settings.verse1Color, 'font-size': settings.verse1FontSize + '%', 'bottom': settings.verse1Bottom + '%','left': settings.verse1Left + '%','right': settings.verse1Right + '%','text-align': settings.verse1TextAlign, 'text-transform': settings.verse1TextTransform}">
     <span [innerHtml]="settings.verse1Book"></span>&nbsp;
     <span [innerHtml]="settings.verse1Reference"></span>
   </div>
 
-  <div class="spVerse black-stroke" [ngStyle]="{'color': settings.verse2Color, 'font-size': settings.verse2FontSize + '%', 'bottom': settings.verse2Bottom + '%','left': settings.verse2Left + '%','right': settings.verse2Right + '%','text-align': settings.verse2TextAlign}">
+  <div class="spVerse black-stroke" [ngStyle]="{'color': settings.verse2Color, 'font-size': settings.verse2FontSize + '%', 'bottom': settings.verse2Bottom + '%','left': settings.verse2Left + '%','right': settings.verse2Right + '%','text-align': settings.verse2TextAlign, 'text-transform': settings.verseTextTransform}">
     <span [innerHtml]="settings.verse2Book"></span>&nbsp;
     <span [innerHtml]="settings.verse2Reference"></span>
   </div>

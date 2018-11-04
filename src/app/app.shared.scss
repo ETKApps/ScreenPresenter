@@ -1,18 +1,3 @@
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin-ext');
-// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic&amp;subset=latin-ext');
-
-@font-face {
-  font-family: 'CMGSans-Black';
-  src: url('/assets/fonts/CMG Sans/CMGSans-Black.ttf');
-}
-
-// @import "~bootstrap/dist/css/bootstrap.css";
-// @import "~bootstrap/scss/bootstrap.scss";
-// @import "~font-awesome/scss/font-awesome.scss";
-// @import "~font-awesome/css/font-awesome.css";
-// @import "~@ng-select/ng-select/themes/material.theme.css";
-@import "~@ng-select/ng-select/themes/default.theme.css";
-
 @import 'app.variables.scss';
 
 html {
@@ -24,7 +9,7 @@ body {
     @include fullscreen;
     overflow: hidden;
     word-wrap: break-word;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-family: "Roboto",Helvetica,Arial,sans-serif !important;
     background: $black-1;
 }
 
@@ -49,7 +34,7 @@ video {
 .spTitle,
 .spVerse {
   position:absolute;
-  font-family: "CMGSans-Black";
+  font-family: "Montserrat";
 }
 
 .black-stroke{
@@ -71,4 +56,47 @@ video {
   // -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
+}
+
+// Padding
+.padding {
+  padding: $padding !important;
+
+  &-top {
+    padding-top: $padding !important;
+  }
+
+  &-right {
+    padding-right: $padding !important;
+  }
+
+  &-bottom {
+    padding-bottom: $padding !important;
+  }
+
+  &-left {
+    padding-left: $padding !important;
+  }
+}
+
+.no {
+  &-padding {
+    padding: 0 !important;
+
+    &-top {
+      padding-top: 0 !important;
+    }
+
+    &-right {
+      padding-right: 0 !important;
+    }
+
+    &-bottom {
+      padding-bottom: 0 !important;
+    }
+
+    &-left {
+      padding-left: 0 !important;
+    }
+  }
 }
