@@ -7,6 +7,7 @@
     "dev-server-hot": "ng server -o",
     "build": "ng build",
     "deploy": "ng build --prod",
+    "deploy-github": "ng build --prod --output-path docs --base-href ScreenPresenter",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
