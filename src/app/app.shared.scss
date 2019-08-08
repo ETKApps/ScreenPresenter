@@ -9,7 +9,7 @@ body {
     @include fullscreen;
     overflow: hidden;
     word-wrap: break-word;
-    font-family: "Roboto",Helvetica,Arial,sans-serif !important;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif !important;
     background: $black-1;
 }
 
@@ -34,7 +34,8 @@ video {
 .spTitle,
 .spVerse {
   position:absolute;
-  font-family: "Montserrat";
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
 }
 
 .black-stroke{
